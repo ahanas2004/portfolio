@@ -1,0 +1,139 @@
+/* General Card Styles */
+.quote-card-view {
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.2s ease-in-out; /* Smooth scaling effect on hover */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Restricts width for readability */
+    box-sizing: border-box; /* Ensures padding doesn't exceed width */
+}
+
+.quote-card-view:hover {
+    transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+/* Blockquote Styling */
+.blockquote {
+    border-left: 5px solid rgba(155, 126, 172, 0.8); /* Decorative border */
+    padding-left: 20px; /* Space for the border */
+    margin-bottom: 0; /* Removes extra bottom margin */
+    font-style: italic; /* Emphasized text */
+    color: #555; /* Neutral color for readability */
+}
+
+/* Activity List */
+.activity-list {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+}
+
+/* Activity Items */
+.about-activity {
+    margin-bottom: 10px; /* Space between activity items */
+    display: flex; /* Aligns icon and text horizontally */
+    align-items: center; /* Centers items vertically */
+    font-weight: 500; /* Slightly bolder text */
+    color: #88929c; /* Neutral text color */
+}
+
+.about-activity svg {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Highlighted Text */
+.purple {
+    color: #6a1b9a; /* Purple accent for emphasis */
+    font-weight: bold; /* Adds visual importance */
+}
+
+/* Responsive Media Queries */
+
+/* Tablet View (Max Width: 768px) */
+@media (max-width: 768px) {
+    .quote-card-view {
+        max-width: 90%; /* Occupies 90% of screen width */
+        padding: 15px; /* Reduces padding */
+    }
+
+    .blockquote {
+        padding-left: 15px; /* Adjusts border spacing */
+    }
+
+    .about-activity {
+        font-size: 0.95rem; /* Slightly smaller text for better fit */
+    }
+
+    h1, h2 {
+        font-size: 1.8rem; /* Adjusts headings for tablets */
+    }
+}
+
+/* Mobile View (Max Width: 576px) */
+@media (max-width: 576px) {
+    .quote-card-view {
+        max-width: 100%; /* Full width for mobile screens */
+        padding: 15px; /* Maintains consistent padding */
+        margin: 10px; /* Reduces margin for compact view */
+    }
+
+    .blockquote {
+        padding-left: 10px; /* Adjusts padding for narrow screens */
+        font-size: 0.9rem; /* Scales text for readability */
+    }
+
+    .about-activity {
+        font-size: 0.9rem; /* Smaller font for mobile */
+    }
+
+    .about-activity svg {
+        margin-right: 5px; /* Tightens icon spacing */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjusts paragraph text size */
+        line-height: 1.4em; /* Improves readability */
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Scales headings for small screens */
+    }
+
+    .purple {
+        font-size: 1.2rem; /* Adjusts highlighted text size */
+    }
+}
+
+/* Small Mobile View (Max Width: 480px) */
+@media (max-width: 480px) {
+    .quote-card-view {
+        padding: 10px; /* Minimal padding for small devices */
+        margin: 5px; /* Compact margins */
+    }
+
+    .blockquote {
+        padding-left: 8px; /* Further reduces spacing */
+        font-size: 0.85rem; /* Scales down text for readability */
+    }
+
+    .about-activity {
+        font-size: 0.85rem; /* Smaller activity text */
+    }
+
+    .about-activity svg {
+        margin-right: 4px; /* Tightens icon spacing further */
+    }
+
+    p {
+        font-size: 0.85rem; /* Scales paragraph text */
+    }
+
+    h1, h2 {
+        font-size: 1.3rem; /* Adjusts headings for small screens */
+    }
+
+    .purple {
+        font-size: 1rem; /* Scales down highlighted text */
+    }
+}

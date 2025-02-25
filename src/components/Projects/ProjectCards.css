@@ -1,0 +1,137 @@
+/* General Card Styling */
+.project-card-view {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff; /* Clean white background */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 100%; /* Full height to maintain layout */
+    position: relative; /* Required for absolute positioning of buttons */
+    opacity: 0; /* Start invisible for entrance animation */
+    animation: fadeIn 0.5s forwards; /* Fade-in effect */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hover Effects for Cards */
+.project-card-view:hover {
+    transform: translateY(-10px) scale(1.02); /* Slight lift and scale on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.project-card-img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease; /* Smooth scaling */
+}
+
+/* Image Hover Effect */
+.project-card-view:hover .project-card-img {
+    transform: scale(1.05); /* Scale image slightly on hover */
+}
+
+/* Card Body Styling */
+.project-card-body {
+    padding: 20px;
+    background-color: #58595b; /* Light grey background for contrast */
+    text-align: center; /* Centered text */
+    flex: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+/* Title Styling */
+.project-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #edf1f5; /* Dark color for better readability */
+    text-transform: uppercase; /* All caps for emphasis */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Change title color on hover */
+.project-card-view:hover .project-card-title {
+    color: #0ec2f4; /* Change color on hover */
+}
+
+/* Description Styling */
+.project-card-description {
+    font-size: 1rem;
+    color: #f0f6fc; /* Muted color for secondary text */
+    margin-bottom: 20px;
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Button Container Styling */
+.project-card-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below buttons */
+}
+
+/* Button Styling */
+.project-card-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease, transform 0.2s ease; /* Added transition for scaling */
+    cursor: pointer; /* Cursor pointer on buttons */
+}
+
+/* GitHub Button */
+.project-card-button {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+}
+
+/* Button Hover Effect */
+.project-card-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Scale button on hover */
+}
+
+
+/* View Project Button */
+.view-project-button {
+    background-color: #28a745; /* Custom color for 'View Project' button */
+    border-color: #28a745;
+  }
+  
+  .view-project-button:hover {
+    background-color: #218838;
+    border-color: #218838;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card-img {
+        height: 150px; /* Reduced height for mobile */
+    }
+
+    .project-card-title {
+        font-size: 1.3rem; /* Smaller title */
+    }
+
+    .project-card-description {
+        font-size: 0.9rem; /* Smaller description */
+    }
+
+    .project-card-button {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}

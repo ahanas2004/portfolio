@@ -1,0 +1,35 @@
+
+  
+  .sticky {
+    background-color: #343a40; /* Dark background when sticky */
+    color: #fff; /* Text color when sticky */
+  }
+  
+  .animated-text {
+    font-size: 1.5em; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #f5f7fa; /* Change this to your preferred color */
+    display: inline-block;
+    animation: fadeIn 2s ease-in-out infinite alternate; /* Apply animation */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5; /* Start at half opacity */
+      transform: translateY(0); /* No vertical movement */
+    }
+    100% {
+      opacity: 1; /* Full opacity */
+      transform: scale3d(); /* Move up slightly */
+    }
+  }
+  
+  .fork-btn {
+    margin-left: 20px; /* Adjust spacing for the fork button */
+  }
+  
+  .fork-btn-inner {
+    display: flex; /* Flex layout for button */
+    align-items: center; /* Center items vertically */
+  }
+  

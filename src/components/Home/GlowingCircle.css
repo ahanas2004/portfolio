@@ -1,0 +1,43 @@
+/* GlowingCircle.css */
+
+.glow-circle {
+    position: relative;
+    width: 100%; /* Makes the circle responsive */
+    max-width: 300px; /* Max size for large screens */
+    margin: 0 auto; /* Center the circle horizontally */
+}
+
+.circle-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.home-section {
+    padding: 100px 0; /* Add padding for top and bottom */
+}
+
+.home-header {
+    text-align: left; /* Align text to the left */
+}
+
+.heading {
+    font-size: 2.5em; /* Adjust font size as needed */
+}
+
+.main-name {
+    color: #6a1b9a; /* Color for your name */
+}
+
+.wave {
+    font-size: 2.5em; /* Adjust size of wave emoji */
+}
+
+/* Media queries for additional responsiveness */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.8em; /* Smaller font on mobile */
+    }
+    .main-name {
+        font-size: 1.5em; /* Adjust size of your name */
+    }
+}
