@@ -1,24 +1,19 @@
 /* General Section Styling */
 .about-section {
   background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
-  padding: 70px 20px; /* Added padding for all screens */
+  padding: 70px 0; /* Reset padding for grid consistency */
   position: relative;
-  box-sizing: border-box; /* Ensures proper padding behavior */
+  box-sizing: border-box;
 }
 
 .section-row {
   margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Added gap for better spacing */
 }
 
 /* Image Hover Effect */
 .about-img img {
   transition: transform 0.4s ease-in-out;
-  max-width: 100%; /* Ensures image fits container */
-  border-radius: 10px; /* Adds consistent styling */
+  border-radius: 10px;
 }
 
 .about-img img:hover {
@@ -38,18 +33,11 @@
   color: #27bdd4;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px; /* Padding for smaller screens */
-  box-sizing: border-box; /* Consistency across screens */
-}
-
 h1, h2, h3, p {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  line-height: 1.5; /* Improves readability */
+  line-height: 1.5;
 }
 
 h1 {
@@ -64,83 +52,39 @@ h1 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: justify;
   width: 100%;
-  max-width: 400px; /* Limits card width for better layout */
 }
 
 /* Media Queries for Tablet Devices */
 @media only screen and (max-width: 1024px) {
-  .about-section {
-    padding: 50px 20px;
-  }
-
   .project-heading {
     font-size: 2em;
   }
 
-  .section-row {
-    margin-top: 30px;
-    gap: 15px; /* Adjusted gap for tablets */
-  }
-
   h1 {
     font-size: 1.8em;
-  }
-
-  .about-card {
-    padding: 15px;
-    max-width: 350px; /* Scales card for tablets */
   }
 }
 
 /* Media Queries for Mobile Devices */
 @media only screen and (max-width: 768px) {
-  .about-section {
-    padding: 30px 15px;
-  }
-
   .project-heading {
     font-size: 1.8em;
     margin-bottom: 30px;
   }
 
-  .section-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px; /* Reduced gap for tighter spaces */
-  }
-
   h1 {
     font-size: 1.6em;
-  }
-
-  .about-card {
-    padding: 10px;
-    max-width: 300px; /* Reduces size for mobile */
   }
 }
 
 /* Media Queries for Small Mobile Devices */
 @media only screen and (max-width: 480px) {
-  .about-section {
-    padding: 20px 10px;
-  }
-
   .project-heading {
     font-size: 1.5em;
     margin-bottom: 20px;
   }
 
-  .about-img img {
-    max-width: 100%; /* Keeps images responsive */
-  }
-
   h1 {
     font-size: 1.4em;
-  }
-
-  .about-card {
-    padding: 8px;
-    max-width: 100%; /* Uses full width for small screens */
   }
 }

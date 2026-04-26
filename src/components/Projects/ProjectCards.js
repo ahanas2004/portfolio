@@ -1,8 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { FaEye } from "react-icons/fa"; // Import icon for 'View Project'
-import './ProjectCards.css';  // Import custom CSS for styling
+import { CgWebsite } from "react-icons/cg";
+import { BsGithub } from "react-icons/bs";
+import './ProjectCards.css';
 
 function ProjectCards(props) {
   return (
@@ -19,15 +20,26 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         <div className="project-card-buttons">
+          <Button
+            variant="primary"
+            href={props.ghLink}
+            target="_blank"
+            className="project-card-button"
+          >
+            <BsGithub /> &nbsp;
+            {"GitHub"}
+          </Button>
+
           {props.demoLink && (
             <Button
               variant="primary"
               href={props.demoLink}
               target="_blank"
-              className="project-card-button view-project-button"
+              style={{ marginLeft: "10px" }}
+              className="project-card-button"
             >
-              <FaEye /> &nbsp; {/* Use the 'FaEye' icon */}
-              {"View Project"}
+              <CgWebsite /> &nbsp;
+              {"Demo"}
             </Button>
           )}
         </div>

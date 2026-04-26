@@ -20,7 +20,7 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row className="section-row" style={{ justifyContent: "center", padding: "10px" }}>
+        <Row className="section-row" style={{ justifyContent: "center", alignItems: "center", padding: "10px" }}>
           <Col
             md={7}
             sm={12}
@@ -52,14 +52,13 @@ function About() {
             sm={12}
             xs={12}
             style={{
-              paddingTop: "80px",
               paddingBottom: "50px",
               textAlign: "center",
             }}
             className="about-img"
             data-aos="fade-left"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" style={{ maxWidth: "80%" }} />
+            <img src={laptopImg} alt="about" className="img-fluid" style={{ maxWidth: "100%" }} />
           </Col>
         </Row>
 

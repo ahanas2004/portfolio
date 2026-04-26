@@ -15,11 +15,11 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-          <h1 style={{ fontSize: "2.6em", textAlign: "left",fontFamily: "'Montserrat', sans-serif" }}>
+          <h1 style={{ fontSize: "2.6em", textAlign: "left",fontFamily: "'Montserrat', sans-serif" }} data-aos="fade-up">
             LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
 
-            <p className="home-about-body">
+            <p className="home-about-body" data-aos="fade-up">
             Passionate about solving complex challenges with front-end and back-end expertise, delivering seamless and efficient user experiences.
               <br />
               <br />Proficient in creating modern web features such as 3D animations, interactive card designs, and continuous sliders. My designs are clean, professional, and responsive across all platforms.
@@ -52,14 +52,14 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={4} className="myAvtar" data-aos="zoom-in">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={12} className="home-about-social" data-aos="fade-up">
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me

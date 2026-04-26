@@ -22,43 +22,43 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-       <Col xs={4} md={2} className="tech-icons">
+       <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiHtml5 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiCss3Full />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiBootstrap/>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiAndroid />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiJavascript1 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiNodejs />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiMongodb />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <SiNextdotjs />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiGit />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <SiFirebase />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <DiPython />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons" data-aos="zoom-in">
         <SiExpress />
       </Col>
     </Row>

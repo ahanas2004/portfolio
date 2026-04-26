@@ -39,24 +39,24 @@ function Home() {
                 <Container className="home-content">
                     <Row>
                         <Col md={7} className="home-header">
-                            <h1 style={{ paddingBottom: 15 }} className="heading">
+                            <h1 style={{ paddingBottom: 15 }} className="heading" data-aos="fade-right">
                                 Hi There!{" "}
                                 <span className="wave" role="img" aria-labelledby="wave">
                                     👋🏻
                                 </span>
                             </h1>
 
-                            <h1 className="heading-name">
+                            <h1 className="heading-name" data-aos="fade-right" data-aos-delay="200">
                                 I'M
                                 <strong className="main-name"> AHAMED ANAS </strong>
                             </h1>
 
-                            <div style={{ padding: 50, textAlign: "left" }}>
+                            <div style={{ padding: 50, textAlign: "left" }} data-aos="fade-up" data-aos-delay="400">
                                 <Type />
                             </div>
                         </Col>
 
-                        <Col md={5} style={{ paddingBottom: 20 }}>
+                        <Col md={5} style={{ paddingBottom: 20 }} data-aos="zoom-in" data-aos-delay="600">
                             <GlowingCircleSVG /> {/* Use the SVG here */}
                         </Col>
                     </Row>

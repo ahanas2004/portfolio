@@ -18,6 +18,9 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [load, upadateLoad] = useState(true);
 
@@ -27,6 +30,12 @@ function App() {
     }, 1200);
 
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
   }, []);
 
   return (
